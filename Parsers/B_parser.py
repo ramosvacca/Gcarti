@@ -232,9 +232,11 @@ def process_folder_data(list_of_dict):
             folder_path_to_evaluate = folder_path_to_evaluate# + folder_data['name_to_save']
             print(folder_path_to_evaluate)
 
+            file_name_to_save = folder_data['name_to_save'].replace('/','_')
+
             # Evaluate the folder
             evaluate_folder(eval_path=folder_path_to_evaluate, level_name=folder_data['main_entity'],
-                            save_name=folder_data['name_to_save'], folder_data=folder_data)
+                            save_name=file_name_to_save, folder_data=folder_data)
 
 
 process_folder_data(ENTITIES_DATA_DICTS_LIST)

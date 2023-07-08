@@ -4,7 +4,7 @@ The OpenTarget2RDF tool offers convenient and efficient way to migrate the OpenT
 
 ## Requirements
 
-Python 3.10+ is supported. 
+- [Python 3.10+](https://www.python.org/) is supported. 
 
 Necessary libraries are in requirements.txt
 
@@ -13,9 +13,13 @@ Necessary libraries are in requirements.txt
 ### notes
 It is highly recommended to perform the install in a virtualenv environment.
 
+>python3 -m venv name_of_the_virtualenv
+
 Use the pip install -r requirements.txt command to install all of the Python modules and packages listed in your requirements.txt file.
 
-You will need ~200 GB to download dataset and resulting files.
+>pip install -r /path/to/requirements.txt
+
+You will need ~250 GB to download dataset and resulting files.
 
 The entire process takes ~8 hours. 
 
