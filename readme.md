@@ -26,3 +26,7 @@ The main folder can be specified in the config_data.py file under the variable n
 
 Create virtual environment and run pip to install required libraries in requirements.txt
 
+## Usage
+
+Execute the project with the configured python interpreter.
+Alternatively, run the __main__.py file.
