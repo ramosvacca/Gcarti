@@ -1,5 +1,5 @@
 import os
-import AA_config_data
+from config import AA_config_data
 
 base_uri = AA_config_data.BASE_URI
 
@@ -8,7 +8,7 @@ def capital_first_char(word):
     return word[0].upper() + word[1:]
 
 def comillas(inputText):
-    return '"' + str(inputText) + '"'
+    return '"' + rdf_encode(str(inputText)) + '"'
 
 def remove_baseURI_prefix(input_text):
     if input_text.startswith('baseURI'):

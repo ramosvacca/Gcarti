@@ -1,7 +1,7 @@
 import json
-from AA_helper_functions import *
-import B_field_explorer as field_explorer
-from AA_config_data import *
+from .helper_functions import *
+import Parsers.B_field_explorer as field_explorer
+from config.AA_config_data import *
 
 """
 rdf_write_path:             Where RDF files are to be saved
@@ -239,4 +239,4 @@ def process_folder_data(list_of_dict):
                             save_name=file_name_to_save, folder_data=folder_data)
 
 
-process_folder_data(ENTITIES_DATA_DICTS_LIST)
+#process_folder_data(ENTITIES_DATA_DICTS_LIST)

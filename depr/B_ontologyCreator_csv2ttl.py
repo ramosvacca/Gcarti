@@ -1,6 +1,7 @@
 import re
 import pandas as pd
-import AA_config_data
+from config import AA_config_data
+
 
 # Function to split CamelCase words into separate words with spaces in between
 def split_camel_case(s):

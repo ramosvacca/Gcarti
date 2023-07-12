@@ -1,6 +1,5 @@
 import os, json
-from AA_config_data import *
-
+from config.AA_config_data import *
 
 
 def capital_first_char(word):
@@ -116,7 +115,8 @@ def get_output(type_of_output='csv', eval_path=None, level_name=None, csv_save_f
 
     to_print = 'level|parent|property_type|name_in_dataset|predicate|range|example|has_next_level\n'
     for row in output:
-        to_print += ('|'.join(str(x) for x in row)) + '\n'
+
+        to_print += ('|'.join(str(x).replace('|', '-') for x in row)) + '\n'
 
     if csv_save_folder is not None:
         with open(f'{csv_save_folder}{save_name}.csv', 'w') as output_file:
